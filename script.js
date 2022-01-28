@@ -34,7 +34,7 @@ const init = function () {
   playing = true;
 };
 init();
-
+//function to print messages on a modal window
 const messages = function (words) {
   victory.classList.remove('hidden');
   overlay.classList.remove('hidden');
@@ -43,6 +43,11 @@ const messages = function (words) {
     victory.classList.add('hidden');
     overlay.classList.add('hidden');
   };
+  /*there are 3 ways to exit the modal window-
+  1) clicking on the (X) button
+  2) clicking on the overlay
+  3) clicking the ESC key
+  */
   btnCloseModal.addEventListener('click', closeModal);
   overlay.addEventListener('click', closeModal);
   document.addEventListener('keydown', function (e) {
@@ -52,8 +57,9 @@ const messages = function (words) {
   });
 };
 messages(
-  'Welcome to the PIG GAME!!!\nFirst player to 100 points wins!!!\nMay the Best Player Win!!!'
+  'Welcome to the PIG GAME!!! \n The first player to 100 points wins!!! \n May the Battle Begin!!! '
 );
+
 //function to switch players
 const switchPlayer = function () {
   document.getElementById(`current--${activePlayer}`).textContent = 0;
