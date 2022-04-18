@@ -2,6 +2,8 @@
 
 This is a JS-coded game that you can play with a friend.
 The aim of the game to roll a cumulative score of 100 by a dice. The catch? Well, everytime a player rolls a 'one', the current score resets to zero 
+Click on the link below to enjoy!
+https://aaroncherian404.github.io/Pig_Game/
 
 HOW TO PLAY:-
 1) Player 1 always starts first
